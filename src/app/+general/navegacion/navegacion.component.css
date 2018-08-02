@@ -1,0 +1,9 @@
+.activo {
+  color: white !important;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+li button {
+  margin-left: .5em;
+}
