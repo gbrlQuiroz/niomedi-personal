@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+// vistas generales
 import { AcercaDeComponent } from './+general/acerca-de/acerca-de.component';
 import { Error404Component } from './+general/error404/error404.component';
+import { NavegacionComponent } from './+general/navegacion/navegacion.component';
+// vistas principales
 import { DatosGeneralesComponent } from './datos-generales/datos-generales.component';
 import { DatosRelativosSaludComponent } from './datos-relativos-salud/datos-relativos-salud.component';
 import { ContactosEmergenciaComponent } from './contactos-emergencia/contactos-emergencia.component';
+// de los datos generales
 import { IdentidadComponent } from './datos-generales/identidad/identidad.component';
 import { ComplementariosClinicosComponent } from './datos-generales/complementarios-clinicos/complementarios-clinicos.component';
+// de los datos relativos salud
 import { AntecedentesFamiliaresComponent } from './datos-relativos-salud/antecedentes-familiares/antecedentes-familiares.component';
 import { PersonalesPatologicosComponent } from './datos-relativos-salud/personales-patologicos/personales-patologicos.component';
 import { HabitosPersonalesComponent } from './datos-relativos-salud/habitos-personales/habitos-personales.component';
 import { CondicionesVidaComponent } from './datos-relativos-salud/condiciones-vida/condiciones-vida.component';
 import { HistoriaLaboralComponent } from './datos-relativos-salud/historia-laboral/historia-laboral.component';
+
+
 
 
 const routes: Routes = [
@@ -80,6 +86,7 @@ export class AppRoutingModule { }
 export const routingComponents = [
   AcercaDeComponent,
   Error404Component,
+  NavegacionComponent,
   DatosGeneralesComponent,
   DatosRelativosSaludComponent,
   ContactosEmergenciaComponent,
