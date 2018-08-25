@@ -18,6 +18,7 @@ import { HabitosPersonalesComponent } from './datos-relativos-salud/habitos-pers
 import { CondicionesVidaComponent } from './datos-relativos-salud/condiciones-vida/condiciones-vida.component';
 import { HistoriaLaboralComponent } from './datos-relativos-salud/historia-laboral/historia-laboral.component';
 
+import { MiNuevoComponenteComponent } from './contactos-emergencia/mi-nuevo-componente/mi-nuevo-componente.component';
 
 
 
@@ -69,7 +70,13 @@ const routes: Routes = [
   },
   {
     path: 'contactos-emergencia',
-    component: ContactosEmergenciaComponent
+    component: ContactosEmergenciaComponent,
+    children: [
+      {
+        path: 'nuevo',
+        component: MiNuevoComponenteComponent
+      }
+    ]
   },
   {
     path: '**',
@@ -96,5 +103,6 @@ export const routingComponents = [
   PersonalesPatologicosComponent,
   HabitosPersonalesComponent,
   CondicionesVidaComponent,
-  HistoriaLaboralComponent
+  HistoriaLaboralComponent,
+  MiNuevoComponenteComponent
 ]
